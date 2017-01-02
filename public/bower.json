@@ -1,0 +1,20 @@
+{
+  "name": "my-pjax-website",
+  "homepage": "https://github.com/xandros15/pjax-slim-example",
+  "authors": [
+    "xandros15 <xandros92@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-pjax": "^1.9.6"
+  }
+}
