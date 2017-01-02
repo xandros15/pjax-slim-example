@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Slim 3</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <style>
+        .navigation ul,
+        .navigation li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .navigation ul {
+            justify-content: center;
+            display: flex;
+        }
+
+        .navigation li {
+            padding: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<nav class="navigation">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/page/1">Page 1</a></li>
+        <li><a href="/page/2">Page 2</a></li>
+    </ul>
+</nav>
+<main class="content">
+    <h2>Main Page</h2>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/bower_components/jquery-pjax/jquery.pjax.js"></script>
+<script>
+    $(document).pjax('a', '.content');
+</script>
+</body>
+</html>
